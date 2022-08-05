@@ -1,0 +1,9 @@
+{% load crispy_forms_tags %}
+{% block content %}
+<form method="POST">
+   <h4 style="text-align:center;"> Registration  </h4>
+   {% csrf_token %}
+   {{ form|crispy }}
+   <div><button id="submitButton" type="submit">register</button></div>
+</form>
+{% endblock %}
